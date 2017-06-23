@@ -8,7 +8,7 @@ import json
 import ckan
 import logging
 import urlparse
-import genshi
+#TODO import genshi
 import datetime
 import re
 import uuid
@@ -31,7 +31,7 @@ def create_default_issue_dataset(pkg_info):
 			't0': toolkit._("Thank you for uploading this item. Instructions about vetting system available on https://wiki.opendevelopmentmekong.net/partners:content_review#instructions_for_default_issue_on_datasets")
 		}
 
-		issue_message = ckan.lib.base.render('messages/default_issue_dataset.txt',extra_vars=extra_vars,loader_class=genshi.template.text.NewTextTemplate)
+		issue_message = "TODO"#ckan.lib.base.render('messages/default_issue_dataset.txt',extra_vars=extra_vars,loader_class=genshi.template.text.NewTextTemplate)
 
 		params = {'title':'User Dataset Upload Checklist','description':issue_message,'dataset_id':pkg_info['id']}
 		toolkit.get_action('issue_create')(data_dict=params)

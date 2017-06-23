@@ -7,7 +7,7 @@ import json
 import logging
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
-from genshi.template.text import NewTextTemplate
+#TODO from genshi.template.text import NewTextTemplate
 from ckan.lib.base import render
 from pylons import config
 
